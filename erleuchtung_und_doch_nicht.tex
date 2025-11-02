@@ -1,0 +1,78 @@
+\documentclass[a4paper]{scrreprt}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english,main=ngerman]{babel}
+\RequirePackage{marvosym}
+\RequirePackage{graphicx}
+\RequirePackage{color}
+\usepackage{csquotes}
+\usepackage{xurl} 
+\usepackage{scrhack}
+\usepackage{amsmath} 
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{color}
+\setlength{\parindent}{0em}
+\usepackage{setspace} % für Zeilenabstand-Geschichte
+\onehalfspacing %Zeilenabstand 1,5 zeilig
+\renewcommand*{\dictumwidth}{.75\textwidth}
+\renewcommand*{\dictumauthorformat}[1]{#1\bigskip\bigskip}
+\usepackage[
+	backend=biber,
+	style=alphabetic ,
+	sortlocale=de_DE,
+	natbib=true,
+	url=true, 
+	doi=true,
+	eprint=false
+]{biblatex}
+\usepackage{hyperref} % Muss als letztes package geladen werden!
+\addbibresource{mathe.bib}
+
+
+%-------------------
+%Hier beginnt der Text deiner Hausarbeit
+%-------------------
+\begin{document}
+	
+	
+	\begin{titlepage}
+
+		\begin{center}
+			\begin{Large}
+				\vfill {\textsf{\textbf{
+							Mein Schlaganfall
+				}}}
+			\end{Large}
+		\end{center}
+		
+		\begin{small}
+			\vfill Andrey Behrens
+			\\Erstellt: 2025-11-03
+		\end{small}
+		
+	\end{titlepage}
+	%Ende der Titelseite
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	
+	
+	\clearpage
+	
+	%Anderthalbzeiliger Zeilenabstand ab hier
+	\onehalfspacing
+	\pagestyle{plain}
+
+\chapter{Der Schlaganfall}
+
+\chapter{Die Zwischenstation}
+
+\chapter{Die Psychiatrie}
+
+\chapter{Im Jammertal}
+
+\chapter{Im Ausblick}
+
+\end{document}
+
+

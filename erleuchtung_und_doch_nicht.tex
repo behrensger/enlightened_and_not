@@ -1,26 +1,18 @@
 \documentclass[a4paper]{scrreprt}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english,main=ngerman]{babel}
-\RequirePackage{marvosym}
-\RequirePackage{graphicx}
-\RequirePackage{color}
-\usepackage{csquotes}
+%\RequirePackage{color}
 \usepackage{xurl} 
 \usepackage{scrhack}
-\usepackage{amsmath} 
-\usepackage{longtable}
-\usepackage{listings}
-\usepackage{color}
-\setlength{\parindent}{0em}
 \usepackage{setspace} % für Zeilenabstand-Geschichte
-\onehalfspacing %Zeilenabstand 1,5 zeilig
-\renewcommand*{\dictumwidth}{.75\textwidth}
-\renewcommand*{\dictumauthorformat}[1]{#1\bigskip\bigskip}
+%\onehalfspacing %Zeilenabstand 1,5 zeilig
+%\renewcommand*{\dictumwidth}{.75\textwidth}
+%\renewcommand*{\dictumauthorformat}[1]{#1\bigskip\bigskip}
 \usepackage[
 	backend=biber,
-	style=alphabetic ,
+	style=alphabetic,
 	sortlocale=de_DE,
-	natbib=true,
+	%natbib=true,
 	url=true, 
 	doi=true,
 	eprint=false
@@ -39,37 +31,25 @@
 
 		\begin{center}
 			\begin{Large}
-				\vfill {\textsf{\textbf{
-							Mein Schlaganfall
-				}}}
+				Mein Schlaganfall
+				
 			\end{Large}
 		\end{center}
 		
 		\begin{small}
-			\vfill A. Behrens
-			\\Erstellt: 2025-11-03
+			\begin{center}
+			A. Behrens, 	2025-11-03
+			\end{center}
 		\end{small}
 		
 	\end{titlepage}
 	%Ende der Titelseite
-	
-	\tableofcontents
-	\thispagestyle{empty}
-	
-	
-	\clearpage
-	
-	%Anderthalbzeiliger Zeilenabstand ab hier
-	\onehalfspacing
-	\pagestyle{plain}
 
 \chapter{Der Schlaganfall}
 
-\chapter{Die Zwischenstation}
+\include{kapitel/zwischenstation}
 
-Die Zwischenstation 
-
-\chapter{Die Psychiatrie}
+\include{kapitel/pychatrie}
 
 \chapter{Im Jammertal}
 
